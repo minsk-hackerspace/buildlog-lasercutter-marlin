@@ -327,7 +327,7 @@ ISR(TIMER1_COMPA_vect)
     if (laser.diagnostics) SERIAL_ECHOLN("Laser firing duration elapsed, in interrupt handler");
 	laser_extinguish();
   }
-  #endif LASER
+  #endif
 	
   // If there is no current block, attempt to pop one from the buffer
   if (current_block == NULL) {
